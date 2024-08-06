@@ -1,5 +1,7 @@
 services:
   hello-world:
     build: .
+    environment:
+      - HELLO_WORLD_NAME
     ports:
       - "5000:5000"
